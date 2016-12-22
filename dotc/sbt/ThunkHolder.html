@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - ThunkHolder</title>
+
+        <script type="text/javascript" src="../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../docassets/github.css">
+        <link rel="stylesheet" href="../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"ThunkHolder","members":[{"name":"forceThunks","modifiers":["protected","final"],"path":["dotty","tools","dotc","sbt","ThunkHolder","forceThunks"],"returnValue":{"title":"Unit","tpeLink":{"title":"Unit","target":"scala.Unit","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[],"isImplicit":false}],"comment":{"body":"<p>Force all unevaluated thunks to prevent space leaks.</p>","short":"<p>Force all unevaluated thunks to prevent space leaks.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"},{"name":"lzy","modifiers":[],"path":["dotty","tools","dotc","sbt","ThunkHolder","lzy"],"returnValue":{"title":"Lazy","tpeLink":{"title":"Lazy","target":"xsbti.api.Lazy","kind":"NoLink"},"paramLinks":[{"title":"T","tpeLink":{"title":"T","target":"scala.T","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"}],"kind":"TypeReference"},"typeParams":["T"],"paramLists":[{"list":[{"title":"t","ref":{"title":"T","tpeLink":{"title":"T","target":"scala.T","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":true,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false}],"comment":{"body":"<p>Store the by-name parameter <code>s</code> in a <code>Lazy</code> container without evaluating it.\n It will be forced by the next call to <code>forceThunks()</code>\n</p>","short":"<p>Store the by-name parameter <code>s</code> in a <code>Lazy</code> container without evaluating it.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"},{"name":"strict2lzy","modifiers":[],"path":["dotty","tools","dotc","sbt","ThunkHolder","strict2lzy"],"returnValue":{"title":"Lazy","tpeLink":{"title":"Lazy","target":"xsbti.api.Lazy","kind":"NoLink"},"paramLinks":[{"title":"T","tpeLink":{"title":"T","target":"scala.T","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"}],"kind":"TypeReference"},"typeParams":["T"],"paramLists":[{"list":[{"title":"t","ref":{"title":"T","tpeLink":{"title":"T","target":"scala.T","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false}],"comment":{"body":"<p>Store the parameter <code>s</code> in a <code>Lazy</code> container, since <code>s</code> is not by-name, there\n is nothing to force.</p><p> TODO: Get rid of this method. It is only needed because some xsbti.api classes\n take lazy arguments when they could be strict, but this can be fixed in sbt,\n see https://github.com/sbt/zinc/issues/114\n</p>","short":"<p>Store the parameter <code>s</code> in a <code>Lazy</code> container, since <code>s</code> is not by-name, there\n is nothing to force.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"},{"name":"thunks","modifiers":["private"],"path":["dotty","tools","dotc","sbt","ThunkHolder","thunks"],"returnValue":{"title":"ListBuffer","tpeLink":{"title":"ListBuffer","target":"scala.collection.mutable.ListBuffer","kind":"NoLink"},"paramLinks":[{"title":"Lazy","tpeLink":{"title":"Lazy","target":"xsbti.api.Lazy","kind":"NoLink"},"paramLinks":[{"low":{"title":"Nothing","tpeLink":{"title":"Nothing","target":"scala.Nothing","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"high":{"title":"Any","tpeLink":{"title":"Any","target":"scala.Any","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"BoundsReference"}],"kind":"TypeReference"}],"kind":"TypeReference"},"kind":"val"}],"modifiers":[],"path":["dotc","sbt","ThunkHolder"],"typeParams":[],"traitParams":[{"list":[],"isImplicit":false}],"superTypes":[],"comment":{"body":"<p>Create and hold thunks. A thunk is a (potentially) unevaluated value\n that may be evaluated once.\n</p>","short":"<p>Create and hold thunks.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"trait"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

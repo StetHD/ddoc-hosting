@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - LinkScala2ImplClasses</title>
+
+        <script type="text/javascript" src="../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../docassets/github.css">
+        <link rel="stylesheet" href="../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"LinkScala2ImplClasses","members":[{"name":"Scala2xTrait","modifiers":["private"],"path":["dotty","tools","dotc","transform","LinkScala2ImplClasses","Scala2xTrait"],"returnValue":{"title":"R","tpeLink":{"title":"R","target":"scala.R","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"val"},{"name":"implMethod","modifiers":["private"],"path":["dotty","tools","dotc","transform","LinkScala2ImplClasses","implMethod"],"returnValue":{"title":"Symbol","tpeLink":{"title":"Symbol","target":"scala.Symbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"meth","ref":{"title":"Symbol","tpeLink":{"title":"Symbol","target":"scala.Symbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"},{"name":"phaseName","modifiers":["override"],"path":["dotty","tools","dotc","transform","LinkScala2ImplClasses","phaseName"],"returnValue":{"title":"String","tpeLink":{"title":"String","target":"scala.String","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"runsAfter","modifiers":["override"],"path":["dotty","tools","dotc","transform","LinkScala2ImplClasses","runsAfter"],"returnValue":{"title":"Set","tpeLink":{"title":"Set","target":"scala.collection.immutable.Set","kind":"NoLink"},"paramLinks":[{"title":"Class","tpeLink":{"title":"Class","target":"scala.Class","kind":"NoLink"},"paramLinks":[{"low":{"title":"Nothing","tpeLink":{"title":"Nothing","target":"scala.Nothing","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"high":{"title":"Phase","tpeLink":{"title":"Phase","target":"scala.Phase","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"BoundsReference"}],"kind":"TypeReference"}],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"transformApply","modifiers":["override"],"path":["dotty","tools","dotc","transform","LinkScala2ImplClasses","transformApply"],"returnValue":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"app","ref":{"title":"Apply","tpeLink":{"title":"Apply","target":"scala.Apply","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"},{"title":"info","ref":{"title":"TransformerInfo","tpeLink":{"title":"TransformerInfo","target":"scala.TransformerInfo","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"}],"modifiers":[],"path":["dotc","transform","LinkScala2ImplClasses"],"typeParams":[],"constructors":[[{"list":[],"isImplicit":false}]],"superTypes":[{"title":"MiniPhaseTransform","target":"dotty.tools.dotc.transform.TreeTransforms$.MiniPhaseTransform","kind":"NoLink"},{"title":"IdentityDenotTransformer","target":"dotty.tools.dotc.core.DenotTransformers$.IdentityDenotTransformer","kind":"NoLink"}],"comment":{"body":"<p>Rewrite calls</p><p>   super[M].f(args)</p><p> where M is a Scala2 trait implemented by the current class to</p><p>   M$class.f(this, args)</p><p> provided the implementation class M$class defines a corresponding function <code>f</code>.\n</p>","short":"<p>Rewrite calls</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"class"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

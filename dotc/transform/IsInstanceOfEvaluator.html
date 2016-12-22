@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - IsInstanceOfEvaluator</title>
+
+        <script type="text/javascript" src="../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../docassets/github.css">
+        <link rel="stylesheet" href="../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"IsInstanceOfEvaluator","members":[{"name":"phaseName","modifiers":[],"path":["dotty","tools","dotc","transform","IsInstanceOfEvaluator","phaseName"],"returnValue":{"title":"String","tpeLink":{"title":"String","target":"scala.String","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"transformTypeApply","modifiers":["override"],"path":["dotty","tools","dotc","transform","IsInstanceOfEvaluator","transformTypeApply"],"returnValue":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"tree","ref":{"title":"TypeApply","tpeLink":{"title":"TypeApply","target":"scala.TypeApply","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"},{"title":"info","ref":{"title":"TransformerInfo","tpeLink":{"title":"TransformerInfo","target":"scala.TransformerInfo","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"}],"modifiers":[],"path":["dotc","transform","IsInstanceOfEvaluator"],"typeParams":[],"constructors":[[{"list":[],"isImplicit":false}]],"superTypes":[{"title":"MiniPhaseTransform","target":"dotty.tools.dotc.transform.TreeTransforms$.MiniPhaseTransform","kind":"NoLink"}],"comment":{"body":"<p>Implements partial evaluation of <code>sc.isInstanceOf[Sel]</code> according to:</p><p> +-------------+----------------------------+----------------------------+------------------+\n | Sel\\sc      | trait                      | class                      | final class      |\n +-------------+----------------------------+----------------------------+------------------+\n | trait       |               ?            |               ?            | statically known |\n | class       |               ?            | false if classes unrelated | statically known |\n | final class | false if classes unrelated | false if classes unrelated | statically known |\n +-------------+----------------------------+----------------------------+------------------+</p><p> This is a generalized solution to raising an error on unreachable match\n cases and warnings on other statically known results of <code>isInstanceOf</code>.</p><p> Steps taken:</p><ol class=decimal><li> evalTypeApply will establish the matrix and choose the appropriate\n     handling for the case:\n 2.  a) Sel/sc is a value class or scrutinee is <code>Any</code>\n     b) handleStaticallyKnown\n     c) falseIfUnrelated with <code>scrutinee <:< selector</code>\n     d) handleFalseUnrelated\n     e) leave as is (aka <code>happens</code>)\n 3.  Rewrite according to step taken in <code>2</code>\n</li></ol>","short":"<p>Implements partial evaluation of <code>sc.isInstanceOf[Sel]</code> according to:</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"class"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

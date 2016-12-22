@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - Definitions</title>
+
+        <script type="text/javascript" src="../../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../../docassets/github.css">
+        <link rel="stylesheet" href="../../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"Definitions","members":[{"name":"MaxImplementedFunctionArity","modifiers":[],"path":["dotty","tools","dotc","core","Definitions$","MaxImplementedFunctionArity"],"returnValue":{"title":"Int","tpeLink":{"title":"Int","target":"scala.Int","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"comment":{"body":"<p>The maximum arity N of a function type that's implemented\n as a trait <code>scala.FunctionN</code>. Functions of higher arity are possible,\n but are mapped in erasure to functions taking a single parameter of type\n Object[].\n The limit 22 is chosen for Scala2x interop. It could be something\n else without affecting the set of programs that can be compiled.\n</p>","short":"<p>The maximum arity N of a function type that's implemented\n as a trait <code>scala.FunctionN</code>.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"val"},{"name":"MaxTupleArity","modifiers":[],"path":["dotty","tools","dotc","core","Definitions$","MaxTupleArity"],"returnValue":{"title":"Int","tpeLink":{"title":"Int","target":"scala.Int","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"comment":{"body":"<p>The maximum number of elements in a tuple or product.\n This should be removed once we go to hlists.\n</p>","short":"<p>The maximum number of elements in a tuple or product.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"val"}],"modifiers":["final"],"path":["tools","dotc","core","Definitions$"],"superTypes":[],"kind":"object"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

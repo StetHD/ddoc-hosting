@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - ExtensionMethods</title>
+
+        <script type="text/javascript" src="../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../docassets/github.css">
+        <link rel="stylesheet" href="../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"ExtensionMethods","members":[{"name":"extensionMethod","modifiers":[],"path":["dotty","tools","dotc","transform","ExtensionMethods$","extensionMethod"],"returnValue":{"title":"TermSymbol","tpeLink":{"title":"TermSymbol","target":"scala.TermSymbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"imeth","ref":{"title":"Symbol","tpeLink":{"title":"Symbol","target":"scala.Symbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"comment":{"body":"<p>Return the extension method that corresponds to given instance method <code>meth</code>.</p>","short":"<p>Return the extension method that corresponds to given instance method <code>meth</code>.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"},{"name":"extensionNames","modifiers":["private"],"path":["dotty","tools","dotc","transform","ExtensionMethods$","extensionNames"],"returnValue":{"title":"Stream","tpeLink":{"title":"Stream","target":"scala.collection.immutable.Stream","kind":"NoLink"},"paramLinks":[{"title":"Name","tpeLink":{"title":"Name","target":"scala.Name","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"}],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"imeth","ref":{"title":"Symbol","tpeLink":{"title":"Symbol","target":"scala.Symbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"comment":{"body":"<p>Generate stream of possible names for the extension version of given instance method <code>imeth</code>.\n If the method is not overloaded, this stream consists of just \"imeth$extension\".\n If the method is overloaded, the stream has as first element \"imeth$extenionX\", where X is the\n index of imeth in the sequence of overloaded alternatives with the same name. This choice will\n always be picked as the name of the generated extension method.\n After this first choice, all other possible indices in the range of 0 until the number\n of overloaded alternatives are returned. The secondary choices are used to find a matching method\n in <code>extensionMethod</code> if the first name has the wrong type. We thereby gain a level of insensitivity\n of how overloaded types are ordered between phases and picklings.\n</p>","short":"<p>Generate stream of possible names for the extension version of given instance method <code>imeth</code>.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"}],"modifiers":["final"],"path":["dotc","transform","ExtensionMethods$"],"superTypes":[],"kind":"object"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

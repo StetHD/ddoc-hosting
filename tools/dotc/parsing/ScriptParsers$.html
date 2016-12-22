@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - ScriptParsers</title>
+
+        <script type="text/javascript" src="../../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../../docassets/github.css">
+        <link rel="stylesheet" href="../../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"ScriptParsers","members":[{"name":"ScriptParser","members":[{"name":"ctx","modifiers":["private","implicit"],"path":["dotty","tools","dotc","parsing","ScriptParsers$","ScriptParser","ctx"],"returnValue":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"val"},{"name":"parse","modifiers":["override"],"path":["dotty","tools","dotc","parsing","ScriptParsers$","ScriptParser","parse"],"returnValue":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[],"isImplicit":false}],"comment":{"body":"<p>This is the parse entry point for code which is not self-contained, e.g.\n a script which is a series of template statements.  They will be\n swaddled in Trees until the AST is equivalent to the one returned\n by compilationUnit().\n</p>","short":"<p>This is the parse entry point for code which is not self-contained, e.g.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"def"},{"name":"source","modifiers":["private"],"path":["dotty","tools","dotc","parsing","ScriptParsers$","ScriptParser","source"],"returnValue":{"title":"SourceFile","tpeLink":{"title":"SourceFile","target":"scala.SourceFile","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"val"}],"modifiers":[],"path":["tools","dotc","parsing","ScriptParsers","ScriptParser"],"typeParams":[],"constructors":[[{"list":[{"title":"source","ref":{"title":"SourceFile","tpeLink":{"title":"SourceFile","query":"SourceFile","kind":"UnsetLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","query":"Context","kind":"UnsetLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}]],"superTypes":[{"title":"Parser","target":"dotty.tools.dotc.parsing.Parsers$.Parser","kind":"NoLink"}],"kind":"class"}],"modifiers":["final"],"path":["tools","dotc","parsing","ScriptParsers$"],"superTypes":[],"comment":{"body":"<p>Performs the following context-free rewritings:</p><p> -\n     Places all pattern variables in Bind nodes. In a pattern, for\n     identifiers <code>x</code>:\n<pre>\n                x  => x @ _\n              x:T  => x @ (_ : T)\n</pre></p><ul><li>Removes pattern definitions (PatDef's) as follows:\n     If pattern is a simple (typed) identifier:\n<pre>\n       <b>val</b> x = e     ==>  <b>val</b> x = e\n       <b>val</b> x: T = e  ==>  <b>val</b> x: T = e\n</pre></li></ul><p>     if there are no variables in pattern\n<pre>\n       <b>val</b> p = e  ==>  e match (case p => ())\n</pre></p><p>     if there is exactly one variable in pattern\n<pre>\n       <b>val</b> x_1 = e <b>match</b> (case p => (x_1))\n</pre></p><p>     if there is more than one variable in pattern\n<pre>\n       <b>val</b> p = e  ==>  <b>private synthetic val</b> t$ = e <b>match</b> (case p => (x_1, ..., x_N))\n                       <b>val</b> x_1 = t$._1\n                       ...\n                       <b>val</b> x_N = t$._N\n</pre></p><p> -\n      Removes function types as follows:\n<pre>\n       (argtpes) => restpe   ==>   scala.Function_n[argtpes, restpe]\n</pre></p><p> -\n     Wraps naked case definitions in a match as follows:\n<pre>\n       { cases }   ==>   (x => x.match {cases})<span style=\"font-family:normal;\">, except when already argument to match</span>\n</pre></p>","short":"<p>Performs the following context-free rewritings:</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"object"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

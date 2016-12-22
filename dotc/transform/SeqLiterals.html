@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - SeqLiterals</title>
+
+        <script type="text/javascript" src="../../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../../docassets/index.js"></script>
+        <script type="text/javascript" src="../../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../../docassets/material-icons.css">
+        <link rel="stylesheet" href="../../docassets/material.min.css">
+        <link rel="stylesheet" href="../../docassets/github.css">
+        <link rel="stylesheet" href="../../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"SeqLiterals","members":[{"name":"checkPostCondition","modifiers":["override"],"path":["dotty","tools","dotc","transform","SeqLiterals","checkPostCondition"],"returnValue":{"title":"Unit","tpeLink":{"title":"Unit","target":"scala.Unit","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"tree","ref":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"},{"name":"phaseName","modifiers":["override"],"path":["dotty","tools","dotc","transform","SeqLiterals","phaseName"],"returnValue":{"title":"String","tpeLink":{"title":"String","target":"scala.String","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"runsAfter","modifiers":["override"],"path":["dotty","tools","dotc","transform","SeqLiterals","runsAfter"],"returnValue":{"title":"Set","tpeLink":{"title":"Set","target":"scala.collection.immutable.Set","kind":"NoLink"},"paramLinks":[{"title":"Class","tpeLink":{"title":"Class","target":"scala.Class","kind":"NoLink"},"paramLinks":[{"low":{"title":"Nothing","tpeLink":{"title":"Nothing","target":"scala.Nothing","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"high":{"title":"Phase","tpeLink":{"title":"Phase","target":"scala.Phase","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"kind":"BoundsReference"}],"kind":"TypeReference"}],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"transformSeqLiteral","modifiers":["override"],"path":["dotty","tools","dotc","transform","SeqLiterals","transformSeqLiteral"],"returnValue":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"tree","ref":{"title":"SeqLiteral","tpeLink":{"title":"SeqLiteral","target":"scala.SeqLiteral","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"},{"title":"info","ref":{"title":"TransformerInfo","tpeLink":{"title":"TransformerInfo","target":"scala.TransformerInfo","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"}],"modifiers":[],"path":["dotc","transform","SeqLiterals"],"typeParams":[],"constructors":[[{"list":[],"isImplicit":false}]],"superTypes":[{"title":"MiniPhaseTransform","target":"dotty.tools.dotc.transform.TreeTransforms$.MiniPhaseTransform","kind":"NoLink"}],"comment":{"body":"<p>A transformer that eliminates SeqLiteral's, transforming <code>SeqLiteral(elems)</code> to an operation\n equivalent to</p><p>     JavaSeqLiteral(elems).toSeq</p><p> Instead of <code>toSeq</code>, which takes an implicit, the appropriate \"wrapArray\" method\n is called directly. The reason for this step is that JavaSeqLiterals, being arrays\n keep a precise type after erasure, whereas SeqLiterals only get the erased type <code>Seq</code>,\n</p>","short":"<p>A transformer that eliminates SeqLiteral's, transforming <code>SeqLiteral(elems)</code> to an operation\n equivalent to</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"class"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>

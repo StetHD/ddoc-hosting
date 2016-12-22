@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Dottydoc - CollectSuperCalls</title>
+
+        <script type="text/javascript" src="../docassets/material.min.js"></script>
+        <script type="text/javascript" src="../docassets/highlight.pack.js"></script>
+        <script type="text/javascript" src="../docassets/index.js"></script>
+        <script type="text/javascript" src="../docassets/dottydoc.js"></script>
+        <link rel="stylesheet" href="../docassets/material-icons.css">
+        <link rel="stylesheet" href="../docassets/material.min.css">
+        <link rel="stylesheet" href="../docassets/github.css">
+        <link rel="stylesheet" href="../docassets/index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <script>
+                Index.currentEntity = {"name":"CollectSuperCalls","members":[{"name":"phaseName","modifiers":[],"path":["dotty","tools","backend","jvm","CollectSuperCalls","phaseName"],"returnValue":{"title":"String","tpeLink":{"title":"String","target":"scala.String","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[],"kind":"def"},{"name":"registerSuperCall","modifiers":["private"],"path":["dotty","tools","backend","jvm","CollectSuperCalls","registerSuperCall"],"returnValue":{"title":"Any","tpeLink":{"title":"Any","target":"scala.Any","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"sym","ref":{"title":"ClassSymbol","tpeLink":{"title":"ClassSymbol","target":"scala.ClassSymbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"},{"title":"calls","ref":{"title":"ClassSymbol","tpeLink":{"title":"ClassSymbol","target":"scala.ClassSymbol","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"},{"name":"transformSelect","modifiers":["override"],"path":["dotty","tools","backend","jvm","CollectSuperCalls","transformSelect"],"returnValue":{"title":"Tree","tpeLink":{"title":"Tree","target":"scala.Tree","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"typeParams":[],"paramLists":[{"list":[{"title":"tree","ref":{"title":"Select","tpeLink":{"title":"Select","target":"scala.Select","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":false},{"list":[{"title":"ctx","ref":{"title":"Context","tpeLink":{"title":"Context","target":"scala.Context","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"},{"title":"info","ref":{"title":"TransformerInfo","tpeLink":{"title":"TransformerInfo","target":"scala.TransformerInfo","kind":"NoLink"},"paramLinks":[],"kind":"TypeReference"},"isByName":false,"isRepeated":false,"kind":"NamedReference"}],"isImplicit":true}],"kind":"def"}],"modifiers":[],"path":["jvm","CollectSuperCalls"],"typeParams":[],"constructors":[[{"list":[],"isImplicit":false}]],"superTypes":[{"title":"MiniPhaseTransform","target":"dotty.tools.dotc.transform.TreeTransforms$.MiniPhaseTransform","kind":"NoLink"}],"comment":{"body":"<p>Collect all super calls to trait members.</p><p> For each super reference to trait member, register a call from the current class to the\n owner of the referenced member.</p><p> This information is used to know if it is safe to remove a redundant mixin class.\n A redundant mixin class is one that is implemented by another mixin class. As the\n methods in a redundant mixin class could be implemented with a default abstract method,\n the redundant mixin class could be required as a parent by the JVM.\n</p>","short":"<p>Collect all super calls to trait members.</p>","authors":[],"see":[],"throws":{},"valueParams":{},"typeParams":{},"todo":[],"note":[],"example":[],"groupDesc":{},"groupNames":{},"groupPrio":{},"hideImplicitConversions":[]},"kind":"class"};
+                dotty.tools.doc.client.DottyDoc().main(document.getElementById("main-container"));
+            </script>
+        </div>
+    </body>
+</html>
